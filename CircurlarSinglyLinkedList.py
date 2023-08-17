@@ -18,7 +18,7 @@ class CircularSinglyLinkedList:
             
 
     #  Creation of circular singly linkedlist
-    def createCSLL(self, nodeValue):
+    def create_CSLL(self, nodeValue):
         node = Node(nodeValue)
         node.next = node
         self.head = node
@@ -27,7 +27,7 @@ class CircularSinglyLinkedList:
     
     #  Insertion of a node in circular singly linkedlist
 
-    def insertCSLL(self, value, location):
+    def insert_CSLL(self, value, location):
         if self.head is None:
             return "The head reference is None"
         else:
@@ -52,7 +52,7 @@ class CircularSinglyLinkedList:
             return "The node has been successfully inserted"
     
     # Traversal of a node in circular singly linkedlist
-    def traversalCSLL(self):
+    def traversal_CSLL(self):
         if self.head is None:
             print("There is not any element for traversal")
         else:
@@ -64,7 +64,7 @@ class CircularSinglyLinkedList:
                     break
     
     # Searching for a node in circular singly linkedlist
-    def searchCSLL(self, nodeValue):
+    def search_CSLL(self, nodeValue):
         if self.head is None:
             return "There is not any node in this CSLL"
         else:
@@ -77,7 +77,7 @@ class CircularSinglyLinkedList:
                     return "The node does not exist in this CSLL"
 
     # Delete  a node from circular singly linkedlist
-    def deleteNode(self, location):
+    def delete_Node(self, location):
         if self.head is None:
             print("There is not any node in CSLL")
         else:
@@ -112,7 +112,7 @@ class CircularSinglyLinkedList:
                 tempNode.next = nextNode.next
     
     # Delete entire circular sinlgy linkedlist
-    def deleteEntireCSLL(self):
+    def delete_all_CSLL(self):
         self.head = None
         self.tail.next = None
         self.tail = None
