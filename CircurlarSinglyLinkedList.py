@@ -17,7 +17,7 @@ class CircularSinglyLinkedList:
                 break
             
 
-    #  Creation of circular singly linked list
+    #  Creation of circular singly linkedlist
     def createCSLL(self, nodeValue):
         node = Node(nodeValue)
         node.next = node
@@ -25,7 +25,7 @@ class CircularSinglyLinkedList:
         self.tail = node
         return "The CSLL has been created"
     
-    #  Insertion of a node in circular singly linked list
+    #  Insertion of a node in circular singly linkedlist
 
     def insertCSLL(self, value, location):
         if self.head is None:
@@ -51,7 +51,7 @@ class CircularSinglyLinkedList:
                 newNode.next = nextNode
             return "The node has been successfully inserted"
     
-    # Traversal of a node in circular singly linked list
+    # Traversal of a node in circular singly linkedlist
     def traversalCSLL(self):
         if self.head is None:
             print("There is not any element for traversal")
@@ -63,7 +63,7 @@ class CircularSinglyLinkedList:
                 if tempNode == self.tail.next:
                     break
     
-    # Searching for a node in circular singly linked list
+    # Searching for a node in circular singly linkedlist
     def searchCSLL(self, nodeValue):
         if self.head is None:
             return "There is not any node in this CSLL"
@@ -76,7 +76,7 @@ class CircularSinglyLinkedList:
                 if tempNode == self.tail.next:
                     return "The node does not exist in this CSLL"
 
-    # Delete  a node from circular singly linked list
+    # Delete  a node from circular singly linkedlist
     def deleteNode(self, location):
         if self.head is None:
             print("There is not any node in CSLL")
@@ -111,7 +111,7 @@ class CircularSinglyLinkedList:
                 nextNode = tempNode.next
                 tempNode.next = nextNode.next
     
-    # Delete entire circular sinlgy linked list
+    # Delete entire circular sinlgy linkedlist
     def deleteEntireCSLL(self):
         self.head = None
         self.tail.next = None
